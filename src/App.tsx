@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RouteWrapper from "./routes/RouteWrapper";
+import BackgroundWrapper from "./components/BackgroundWrapper";
+import LanguageProvider from "./providers/LanguageProvider";
+import { SnackbarProvider } from "notistack";
+import { QueryClientProvider } from "@tanstack/react-query";
+import queryClient from "./constants/query-client";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <BackgroundWrapper>
+        <LanguageProvider>
+          <SnackbarProvider
+            maxSnack={3}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            autoHideDuration={3000}
+            className="bg-white"
+          >
+            <RouteWrapper />
+          </SnackbarProvider>
+        </LanguageProvider>
+      </BackgroundWrapper>
+    </QueryClientProvider>
   );
-}
+};
 
 export default App;

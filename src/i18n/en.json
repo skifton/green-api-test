@@ -1,0 +1,19 @@
+{
+  "LOGIN_TO_GREEN_API": "Login to Green Api",
+  "LOGIN": "LOGIN",
+  "FORM.ID_INSTANCE.REQUIRED": "ID Instance is a required field!",
+  "FORM.API_TOKEN_INSTANCE.REQUIRED": "API Token Instance is a required field!",
+  "FORM.PHONE_NUMBER.REQUIRED": "Phone Number is a required field!",
+  "SNACKBAR.SUCCESSFULLY_AUTH": "Welcome Back!",
+  "SNACKBAR.INCORRECT_CREDENTIALS": "Incorrect ID Instance or API Token Instance!",
+  "START_CHAT.TITLE": "Welcome Back!",
+  "START_CHAT.SUBTITLE": "Create new chat and start talking!",
+  "CREATE": "CREATE",
+  "CHAT.TITLE": "Green API Test!",
+  "CHAT.DESCRIPTION": "In this test task, you can send and receive messages from WhatsApp. Select the contact you want to send a message to.",
+  "LOGOUT": "LOGOUT",
+  "INPUT.SEARCH_CONTACT": "Search Contact",
+  "INPUT.SEARCH_CONTACT.PLACEHOLDER": "Search Contact...",
+  "INPUT.MESSAGE": "Message",
+  "INPUT.MESSAGE.PLACEHOLDER": "Message..."
+}
